@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DogIntents.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Purple dog.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>D4D9D9CB1EB7DE6A00E25B92</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4D9D9E41EB7E12300E25B92</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -12,7 +12,33 @@
 		D4D9D9D51EB7DE6A00E25B92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D9D9D31EB7DE6A00E25B92 /* Main.storyboard */; };
 		D4D9D9D71EB7DE6A00E25B92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D9D9D61EB7DE6A00E25B92 /* Assets.xcassets */; };
 		D4D9D9DA1EB7DE6A00E25B92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D9D9D81EB7DE6A00E25B92 /* LaunchScreen.storyboard */; };
+		D4D9D9E81EB7E12300E25B92 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9D9E71EB7E12300E25B92 /* IntentHandler.swift */; };
+		D4D9D9EC1EB7E12300E25B92 /* DogIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D4D9D9E51EB7E12300E25B92 /* DogIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4D9D9EA1EB7E12300E25B92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4D9D9C41EB7DE6900E25B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4D9D9E41EB7E12300E25B92;
+			remoteInfo = DogIntents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4D9D9F01EB7E12300E25B92 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D4D9D9EC1EB7E12300E25B92 /* DogIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D4D9D9CC1EB7DE6A00E25B92 /* Purple dog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Purple dog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +48,21 @@
 		D4D9D9D61EB7DE6A00E25B92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4D9D9D91EB7DE6A00E25B92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4D9D9DB1EB7DE6A00E25B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4D9D9E51EB7E12300E25B92 /* DogIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DogIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D9D9E71EB7E12300E25B92 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		D4D9D9E91EB7E12300E25B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4D9D9F11EB7E15400E25B92 /* Purple dog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Purple dog.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D4D9D9C91EB7DE6A00E25B92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D9D9E21EB7E12300E25B92 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				D4D9D9CE1EB7DE6A00E25B92 /* Purple dog */,
+				D4D9D9E61EB7E12300E25B92 /* DogIntents */,
 				D4D9D9CD1EB7DE6A00E25B92 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				D4D9D9CC1EB7DE6A00E25B92 /* Purple dog.app */,
+				D4D9D9E51EB7E12300E25B92 /* DogIntents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +93,7 @@
 		D4D9D9CE1EB7DE6A00E25B92 /* Purple dog */ = {
 			isa = PBXGroup;
 			children = (
+				D4D9D9F11EB7E15400E25B92 /* Purple dog.entitlements */,
 				D4D9D9CF1EB7DE6A00E25B92 /* AppDelegate.swift */,
 				D4D9D9D11EB7DE6A00E25B92 /* ViewController.swift */,
 				D4D9D9D31EB7DE6A00E25B92 /* Main.storyboard */,
@@ -62,6 +102,15 @@
 				D4D9D9DB1EB7DE6A00E25B92 /* Info.plist */,
 			);
 			path = "Purple dog";
+			sourceTree = "<group>";
+		};
+		D4D9D9E61EB7E12300E25B92 /* DogIntents */ = {
+			isa = PBXGroup;
+			children = (
+				D4D9D9E71EB7E12300E25B92 /* IntentHandler.swift */,
+				D4D9D9E91EB7E12300E25B92 /* Info.plist */,
+			);
+			path = DogIntents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +123,34 @@
 				D4D9D9C81EB7DE6A00E25B92 /* Sources */,
 				D4D9D9C91EB7DE6A00E25B92 /* Frameworks */,
 				D4D9D9CA1EB7DE6A00E25B92 /* Resources */,
+				D4D9D9F01EB7E12300E25B92 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D4D9D9EB1EB7E12300E25B92 /* PBXTargetDependency */,
 			);
 			name = "Purple dog";
 			productName = "Purple dog";
 			productReference = D4D9D9CC1EB7DE6A00E25B92 /* Purple dog.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D4D9D9E41EB7E12300E25B92 /* DogIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4D9D9ED1EB7E12300E25B92 /* Build configuration list for PBXNativeTarget "DogIntents" */;
+			buildPhases = (
+				D4D9D9E11EB7E12300E25B92 /* Sources */,
+				D4D9D9E21EB7E12300E25B92 /* Frameworks */,
+				D4D9D9E31EB7E12300E25B92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogIntents;
+			productName = DogIntents;
+			productReference = D4D9D9E51EB7E12300E25B92 /* DogIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +163,16 @@
 				ORGANIZATIONNAME = "Developer Warriors";
 				TargetAttributes = {
 					D4D9D9CB1EB7DE6A00E25B92 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = M5PT8574CS;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					D4D9D9E41EB7E12300E25B92 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = M5PT8574CS;
 						ProvisioningStyle = Automatic;
@@ -115,6 +193,7 @@
 			projectRoot = "";
 			targets = (
 				D4D9D9CB1EB7DE6A00E25B92 /* Purple dog */,
+				D4D9D9E41EB7E12300E25B92 /* DogIntents */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +209,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4D9D9E31EB7E12300E25B92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +228,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4D9D9E11EB7E12300E25B92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D9D9E81EB7E12300E25B92 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4D9D9EB1EB7E12300E25B92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4D9D9E41EB7E12300E25B92 /* DogIntents */;
+			targetProxy = D4D9D9EA1EB7E12300E25B92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D4D9D9D31EB7DE6A00E25B92 /* Main.storyboard */ = {
@@ -262,7 +364,9 @@
 		D4D9D9DF1EB7DE6A00E25B92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Purple dog/Purple dog.entitlements";
 				DEVELOPMENT_TEAM = M5PT8574CS;
 				INFOPLIST_FILE = "Purple dog/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -275,12 +379,40 @@
 		D4D9D9E01EB7DE6A00E25B92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Purple dog/Purple dog.entitlements";
 				DEVELOPMENT_TEAM = M5PT8574CS;
 				INFOPLIST_FILE = "Purple dog/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.developerwarriors.Purple-dog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D4D9D9EE1EB7E12300E25B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = M5PT8574CS;
+				INFOPLIST_FILE = DogIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developerwarriors.Purple-dog.DogIntents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D4D9D9EF1EB7E12300E25B92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = M5PT8574CS;
+				INFOPLIST_FILE = DogIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developerwarriors.Purple-dog.DogIntents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +434,14 @@
 			buildConfigurations = (
 				D4D9D9DF1EB7DE6A00E25B92 /* Debug */,
 				D4D9D9E01EB7DE6A00E25B92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4D9D9ED1EB7E12300E25B92 /* Build configuration list for PBXNativeTarget "DogIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D9D9EE1EB7E12300E25B92 /* Debug */,
+				D4D9D9EF1EB7E12300E25B92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
